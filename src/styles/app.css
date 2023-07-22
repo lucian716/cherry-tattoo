@@ -51,7 +51,6 @@ body {
   margin-left: 10px; 
 }
 
-
 .header-icons .icon {
   font-size: 20px;
   color: #fff;
@@ -60,7 +59,6 @@ body {
 .header-icons .icon:hover {
   color: #ff9f00;
 }
-
 
 /* FOOTER */
 .footer {
@@ -76,20 +74,78 @@ body {
 
 /* HOME */
 .home-banner {
-  background-image: url();
-  background-size: cover;
-  background-position: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-carousel {
+  position: relative;
   height: 500px;
+  background-color: #f3ceee;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.image-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.arrow-button {
+  cursor: pointer;
+  font-size: 24px;
   color: #fff;
-  font-size: 32px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow-button.left {
+  left: 10px;
+}
+
+.arrow-button.right {
+  right: 10px;
+}
+
+.caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
 }
 
 .home-content {
+  background-color: #fff;
   padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
+
 
 /* ARTISTS */
 .artists {
