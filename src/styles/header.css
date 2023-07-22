@@ -1,10 +1,26 @@
 .header {
   background-color: #f3ceee;
   color: #fff;
-  padding: 20px;
+  padding: 30px;
   display: flex;
   justify-content: space-between; 
   align-items: center; 
+}
+
+.rotating-cherry {
+  justify-content: center;
+  width: 100px; 
+  height: 100px;
+  animation: rotate; 
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .header nav ul {
@@ -21,6 +37,7 @@
 .header nav ul li a {
   text-decoration: none;
   color: #fff;
+  font-size: large;
 }
 
 .header nav ul li a:hover {
@@ -33,11 +50,11 @@
 }
 
 .header-icons a {
-  margin-left: 10px; 
+  padding-right: 25px; 
 }
 
 .header-icons .icon {
-  font-size: 20px;
+  font-size: 23px;
   color: #fff;
 }
 

@@ -8,6 +8,9 @@ import Contact from "./pages/Contact";
 import Artists from "./pages/Artists";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/app.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 const App = () => {
   return (

@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaInstagram, FaEnvelope } from "react-icons/fa"; // Import the icons
+import { FaInstagram, FaEnvelope } from "react-icons/fa";
+import cherryGif from "./cherry_rotating.gif";
 import "../styles/header.css";
 
 const Header = () => {
   return (
     <header className="header">
+      <img src={cherryGif} alt="Rotating Cherry" className="rotating-cherry" />
       <nav>
         <ul>
           <li>
@@ -23,16 +25,15 @@ const Header = () => {
         </ul>
       </nav>
       <div className="header-icons">
-        {" "}
         <a
-          href="https://www.instagram.com/" // Replace with your Instagram URL
+          href="https://www.instagram.com/cherrytattoo.mtl/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaInstagram className="icon" />
         </a>
         <a
-          href="mailto:example@example.com" // Replace with your email address
+          href="mailto:example@example.com"
           target="_blank"
           rel="noopener noreferrer"
         >

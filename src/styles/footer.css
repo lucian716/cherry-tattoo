@@ -1,8 +1,12 @@
 .footer {
-  background-color: #333;
+  background-color: #f3ceee;
   color: #fff;
   padding: 20px;
   text-align: center;
+}
+
+.footer h4 {
+  font-weight: bold;
 }
 
 .footer p {
