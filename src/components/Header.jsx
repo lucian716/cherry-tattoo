@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaInstagram, FaEnvelope } from "react-icons/fa"; // Import the icons
+import "../styles/header.css";
 
 const Header = () => {
   return (

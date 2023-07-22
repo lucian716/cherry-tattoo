@@ -1,0 +1,17 @@
+.artists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.artist-card {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.artist-card img {
+  max-width: 100%;
+  border-radius: 5px;
+}

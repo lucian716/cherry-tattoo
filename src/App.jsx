@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Booking from "./pages/Booking";
 import Contact from "./pages/Contact";
 import Artists from "./pages/Artists";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/app.css";
 
 const App = () => {

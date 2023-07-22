@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Carousel } from "react-bootstrap";
+import "../styles/app.css";
+import "../styles/home.css";
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -18,33 +21,23 @@ const Home = () => {
     return () => clearInterval(timer);
   }, [images.length]);
 
-  const prevImage = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length
-    );
-  };
-
-  const nextImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
   return (
     <section className="home-banner">
-      <div className="image-carousel">
-        <div className="arrow-button left" onClick={prevImage}>
-          &lt;
-        </div>
-        <div
-          className="image-slide"
-          style={{
-            backgroundImage: `url(${images[currentIndex]})`,
-          }}
-        />
-        <div className="arrow-button right" onClick={nextImage}>
-          &gt;
-        </div>
-      </div>
-      <div className="home-content">{/* Add your content here */}</div>
+      <Carousel
+        activeIndex={currentIndex}
+        onSelect={(index) => setCurrentIndex(index)}
+      >
+        {images.map((image, index) => (
+          <Carousel.Item key={index}>
+            <div
+              className="image-slide"
+              style={{
+                backgroundImage: `url(${image})`,
+              }}
+            />
+          </Carousel.Item>
+        ))}
+      </Carousel>
     </section>
   );
 };
