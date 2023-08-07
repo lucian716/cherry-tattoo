@@ -24,7 +24,7 @@ const Artists = () => {
       <div className="artist-grid">
         {artists.map((artist) => (
           <div className="artist-item" key={artist.name}>
-            <Link to={`/artist/${artist.id}`}>
+            <Link to={`/artist/${artist.name}`}>
               <img src={artist.image} alt={artist.name} />
               <h3>{artist.name}</h3>
             </Link>
