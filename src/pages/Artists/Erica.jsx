@@ -1,14 +1,7 @@
 import React from "react";
-import { useParams } from "react-router-dom";
-import "../styles/artists.css"; 
+import "../../styles/artists.css";
 
 const Erica = () => {
-  const { artistName } = useParams();
-
-  // Fetch data for the specific artist using artistId
-  // ...
-
- 
   const images = [
     "chain_dice.png",
     "girl_reaper.png",
@@ -18,7 +11,7 @@ const Erica = () => {
 
   return (
     <div className="artist-page">
-      <h1>Artist {artistName} Page</h1>
+      <h1>Erica Cyr</h1>
       <div className="photo-grid">
         {images.map((image, index) => (
           <div key={index} className="photo-item">

@@ -20,7 +20,7 @@
 
 .artist-item a:hover {
 text-decoration: none;
-color: #f3ceee;
+
 }
 
 .artist-item img {
@@ -35,18 +35,32 @@ color: #f3ceee;
   margin-top: 10px;
 }
 
-/* artist-page.css */
+/* artists */
+
 .artist-page {
   padding: 20px;
 }
 
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-gap: 20px; 
+  justify-items: center; 
+}
+
+.photo-item {
+  text-align: center;
 }
 
 .photo-item img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.photo-item h3 {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 18px;
 }

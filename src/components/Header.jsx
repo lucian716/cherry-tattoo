@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header className="header">
       <img src={cherryGif} alt="Rotating Cherry" className="rotating-cherry" />
-      <nav>
+      <nav className="nav-shift">
         <ul>
           <li>
             <Link to="/">Home</Link>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/artists.css"; // Make sure to import your CSS file
+import "../styles/artists.css"; 
 
 const Artists = () => {
   const artists = [
@@ -16,7 +16,6 @@ const Artists = () => {
       name: "Caroline",
       image: "/images_artists/caroline.png",
     },
-    // Add more artists as needed
   ];
 
   return (
@@ -24,7 +23,7 @@ const Artists = () => {
       <div className="artist-grid">
         {artists.map((artist) => (
           <div className="artist-item" key={artist.name}>
-            <Link to={`/artist/${artist.name}`}>
+            <Link to={`/artists/${artist.name}`}>
               <img src={artist.image} alt={artist.name} />
               <h3>{artist.name}</h3>
             </Link>
