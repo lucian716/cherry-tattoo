@@ -1,17 +1,36 @@
 .artists {
+  padding: 50px;
+}
+
+.artist-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
 }
 
-.artist-card {
-  background-color: #fff;
-  border-radius: 5px;
+.artist-item {
+  text-align: center;
   padding: 20px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.artist-card img {
-  max-width: 100%;
-  border-radius: 5px;
+.artist-item a {
+  text-decoration: none; 
+  color: inherit; 
+  display: block; 
+}
+
+.artist-item a:hover {
+text-decoration: none;
+color: #f3ceee;
+}
+
+.artist-item img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-style: solid;
+  border-color: black;
+}
+
+.artist-item h3 {
+  margin-top: 10px;
 }
