@@ -1,5 +1,5 @@
 .header {
-  background-color: #f3ceee;
+  background-color: #e2acdb;
   color: #fff;
   padding: 30px;
   display: flex;
@@ -54,7 +54,8 @@
 }
 
 .header-icons .icon {
-  font-size: 23px;
+  margin-left: 10px;
+  font-size: 32px;
   color: #fff;
 }
 

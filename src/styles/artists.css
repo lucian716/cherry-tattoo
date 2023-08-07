@@ -34,3 +34,19 @@ color: #f3ceee;
 .artist-item h3 {
   margin-top: 10px;
 }
+
+/* artist-page.css */
+.artist-page {
+  padding: 20px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.photo-item img {
+  width: 100%;
+  height: auto;
+}
