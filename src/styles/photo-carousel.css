@@ -1,25 +1,11 @@
-.photo-carousel {
+.photo-carousel-container {
   width: 100%;
   max-width: 1200px;
-  margin: 50px auto 50px; 
+  margin: 50px auto;
 }
 
-.photo-carousel img {
+.carousel .carousel-image {
   width: 100%;
-  height: 600px;
-  object-fit: cover; 
+  max-height: 800px;
+  object-fit: cover;
 }
-
-.carousel-indicators {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-} 
-
-.slick-prev:before,
-.slick-next:before {
-  font-size: 24px;
-  background-color: #f3ceee;
-  border-radius: 100%;
-}
-

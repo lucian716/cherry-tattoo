@@ -1,29 +1,32 @@
 import React from "react";
-import Slider from "react-slick";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../styles/photo-carousel.css";
-
 const PhotoCarousel = ({ images }) => {
   const settings = {
-    dots: false, 
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
+    autoPlay: true,
+    infiniteLoop: true,
+    showArrows: true,
+    showStatus: false,
+    showThumbs: false,
+    showIndicators: false,
+    interval: 5000,
+    transitionTime: 2500,
   };
 
   return (
-    <div className="photo-carousel">
-      <Slider {...settings}>
+    <div className="photo-carousel-container">
+      <Carousel {...settings}>
         {images.map((image, index) => (
           <div key={index}>
-            <img src={image} alt={`Slide ${index}`} />
+            <img
+              src={image}
+              alt={`Slide ${index}`}
+              className="carousel-image"
+            />
           </div>
         ))}
-      </Slider>
-      <div className="carousel-indicators">
-      </div>
+      </Carousel>
     </div>
   );
 };
