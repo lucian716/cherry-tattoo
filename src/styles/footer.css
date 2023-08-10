@@ -1,9 +1,9 @@
 .footer {
-  background-color: #e2acdb;
+ background: linear-gradient(to top, #fa80ea, #f7f1fc);
   color: #fff;
-  padding: 20px;
+  padding: 40px;
   text-align: center;
-  box-shadow: 0 0 25px 0 rgb(117, 110, 110);
+
 }
 
 .footer h4 {

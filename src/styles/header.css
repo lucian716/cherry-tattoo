@@ -1,5 +1,5 @@
 .header {
-  background-color: #e2acdb;
+ background: linear-gradient(to bottom, #fa80ea, #f7f1fc);
   color: #fff;
   padding: 30px;
   display: flex;
@@ -8,7 +8,6 @@
   font-family: 'Roboto', sans-serif;
   padding: 20px 0;
   text-align: center; 
-  box-shadow: 0 0 25px 0 rgb(117, 110, 110);
 }
 
 .rotating-cherry {
