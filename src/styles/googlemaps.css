@@ -1,5 +1,9 @@
-h1 {
-    padding-top: 20px;
+.contact-heading {
+  color: #e2acdb;
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .google-maps-container {

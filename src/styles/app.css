@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400');
 
 body {
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   min-height: 100%;
@@ -18,6 +19,12 @@ body {
 }
 
 @media (max-width: 768px) {
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
 
   .header {
     display: flex;
@@ -37,60 +44,37 @@ body {
     flex-grow: 1;
   }
 
-  .home-banner {
-    height: 400px;
-    padding: 20px;
+.photo-carousel-container {
+  width: auto;
+  margin: 50px auto;
+}
+
+.carousel .carousel-image {
+  width: 100%;
+  max-height: 800px;
+  object-fit: cover;
+}
+
+  .artist-grid {
+    grid-template-columns: 1fr;
+    margin: 0;
   }
 
-.photo-carousel {
-  width: 100%;
-  max-width: 1200px;
-  margin: 50px auto 50px; 
-}
+  .photo-grid {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
 
-.photo-carousel img {
-  width: 100%;
-  height: 600px;
-  object-fit: cover; 
-}
+   .photo-item {
+    flex: 1 0 calc(100% - 40px);
+    margin: 20px 0; 
+  }
 
-.carousel-indicators {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.slick-prev,
-.slick-next {
-  font-size: 24px;
-  color: #f3ceee;
-  background-color: transparent;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  transition: color 0.3s, background-color 0.3s;
-}
-
-.slick-prev:hover,
-.slick-next:hover {
-  color: #ff9f00;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-
-.footer {
-  background-color: #f3ceee;
-  padding: 20px;
-  text-align: center;
-  font-weight: bold;
-}
+  .footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+  }
 }
 
 

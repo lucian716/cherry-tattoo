@@ -1,5 +1,14 @@
+/* all artists */
+
 .artists {
   padding: 50px;
+}
+
+.artists h3 {
+  color: #e2acdb;
+  padding-bottom: 10px;
+  font-size: 40px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 .artist-grid {
@@ -28,13 +37,14 @@ text-decoration: none;
   max-width: 400px;
   height: auto;
   box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  transition: transform 400ms ease-out;
 }
 
-.artist-item h3 {
-  margin-top: 10px;
+.artist-item img:hover {
+  transform: scale(1.05);
 }
 
-/* artists */
+/* individual artists */
 
 h1 {
   display: flex;
