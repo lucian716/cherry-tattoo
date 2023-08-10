@@ -2,15 +2,6 @@
   padding: 50px;
 }
 
-h1 {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 40px;
-  color: #e2acdb;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-
 .artist-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -46,30 +37,44 @@ text-decoration: none;
 
 /* artists */
 
+h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  color: #e2acdb;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/* artists */
+
 .artist-page {
   padding: 20px;
 }
 
 .photo-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  grid-gap: 20px; 
-  justify-items: center; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -20px 20px;
+  padding-bottom: 50px;
 }
 
 .photo-item {
-  text-align: center;
+  flex: 1 0 calc(50% - 40px);
+  margin: 20px;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
 }
 
 .photo-item img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms ease-out;
 }
 
-.photo-item h3 {
-  margin-top: 10px;
-  font-weight: bold;
-  font-size: 18px;
+.photo-item:hover img {
+  transform: scale(1.15);
 }

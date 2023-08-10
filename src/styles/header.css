@@ -72,19 +72,33 @@
 
 .header-icons {
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
+/* Target the Font Awesome icon links */
 .header-icons a {
-  padding-right: 25px; 
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s;
+  font-size: 30px;
+  margin-right: 25px;
 }
 
-.header-icons .icon {
-  margin-left: 10px;
-  font-size: 32px;
+/* Add underline effect on hover */
+.header-icons a:hover {
   color: #fff;
+  border-bottom: 2px solid #fff;
 }
 
-.header-icons .icon:hover {
-  color: rgba(255, 255, 255, 0.6);
-}
+
+
+
+
+
+
+
