@@ -1,5 +1,6 @@
 import React from "react";
-import GoogleMaps from "./GoogleMaps"; 
+import GoogleMaps from "../components/GoogleMaps"; 
+
 
 const Contact = () => {
   return (

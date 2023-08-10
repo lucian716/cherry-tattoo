@@ -4,8 +4,10 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
+import GoogleMaps from "./components/GoogleMaps";
+
 import Artists from "./pages/Artists";
-import Erica from "./pages/Artists/Erica"; 
+import Erica from "./pages/Artists/Erica";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/app.css";
 import "slick-carousel/slick/slick.css";
@@ -18,8 +20,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/artists" element={<Artists />} />
-        <Route path="/artists/erica" element={<Erica />} />{" "}
-        {/* Add more routes for other artists */}
+        <Route path="/artists/erica" element={<Erica />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>
