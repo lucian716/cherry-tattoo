@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/googlemaps.css";
 import {
   GoogleMap,
   withScriptjs,
@@ -21,11 +22,11 @@ const Map = withScriptjs(
 
 const GoogleMaps = () => {
   return (
-    <div style={{ width: "100%", height: "400px" }}>
+    <div className="google-maps-container">
       <Map
         googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places`}
         loadingElement={<div style={{ height: `100%` }} />}
-        containerElement={<div style={{ height: `100%` }} />}
+        containerElement={<div style={{ height: `calc(100vh - 80px)` }} />}
         mapElement={<div style={{ height: `100%` }} />}
       />
     </div>

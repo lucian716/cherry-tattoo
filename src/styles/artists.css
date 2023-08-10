@@ -27,8 +27,7 @@ text-decoration: none;
   width: 100%;
   max-width: 400px;
   height: auto;
-  border-style: solid;
-  border-color: black;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 }
 
 .artist-item h3 {
@@ -45,8 +44,6 @@ h1 {
   color: #e2acdb;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-
-/* artists */
 
 .artist-page {
   padding: 20px;
