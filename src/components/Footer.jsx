@@ -6,9 +6,9 @@ const Footer = () => {
     <footer className="footer">
       <h4>Cherry Tattoo</h4>
       <p>
-        5746 Saint Dominique St.,
+        5555 Av. de Gaspe,
         <br />
-        Montreal, QC H2T 1V6
+        Montreal, QC H2T 2A3
       </p>
     </footer>
   );

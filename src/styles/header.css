@@ -75,7 +75,7 @@
   align-items: center;
 }
 
-/* Target the Font Awesome icon links */
+
 .header-icons a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
@@ -89,7 +89,7 @@
   margin-right: 25px;
 }
 
-/* Add underline effect on hover */
+
 .header-icons a:hover {
   color: #fff;
   border-bottom: 2px solid #fff;
