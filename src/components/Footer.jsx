@@ -8,6 +8,8 @@ const Footer = () => {
       <p>
         5555 Av. de Gaspe,
         <br />
+        suite 214,
+         <br />
         Montreal, QC H2T 2A3
       </p>
     </footer>
