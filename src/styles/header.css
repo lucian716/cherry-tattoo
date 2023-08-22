@@ -1,6 +1,6 @@
 .header {
- background: linear-gradient(to bottom, #fa80ea, #f7f1fc);
-  color: #fff;
+ background: linear-gradient(to bottom, #fa80ea, #ffffff);
+  color: #ffffff;
   padding: 30px;
   display: flex;
   justify-content: space-between; 
@@ -40,7 +40,7 @@
 
 .header nav ul li a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
   font-weight: 500;
   text-transform: uppercase;
   padding: 10px;
@@ -56,15 +56,12 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background: white;
+  background: #ffffff;
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.3s;
 }
 
-.header nav ul li a:hover {
-  color: white;
-}
 
 .header nav ul li a:hover:after {
   transform: scaleX(1);
@@ -78,7 +75,7 @@
 
 .header-icons a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
   font-weight: 500;
   text-transform: uppercase;
   padding: 10px;
