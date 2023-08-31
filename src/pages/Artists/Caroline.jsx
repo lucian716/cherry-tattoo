@@ -3,8 +3,7 @@ import "../../styles/artists.css";
 
 const Caroline = () => {
   const images = [
-    "Caroline.jpg",
-    "caroline1.jpg",
+    "caroline1.png",
     "caroline2.jpg",
     "caroline3.jpg",
     "caroline4.jpg",

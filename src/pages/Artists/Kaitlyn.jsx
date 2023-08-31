@@ -3,7 +3,6 @@ import "../../styles/artists.css";
 
 const Kaitlyn = () => {
   const images = [
-    "Kaitlyn.png",
     "kaitlyn1.jpg",
     "kaitlyn2.jpg",
     "kaitlyn3.jpg",

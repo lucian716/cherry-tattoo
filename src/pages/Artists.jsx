@@ -10,11 +10,11 @@ const Artists = () => {
     },
     {
       name: "Kaitlyn",
-      image: "/images/kaitlyn/kaitlyn.png",
+      image: "/images/kaitlyn/Kaitlyn.png",
     },
     {
       name: "Caroline",
-      image: "/images/caroline/caroline.png",
+      image: "/images/caroline/Caroline.jpg",
     },
     {
       name: "Alicia",
