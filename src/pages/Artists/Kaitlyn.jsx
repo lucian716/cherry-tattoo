@@ -3,10 +3,17 @@ import "../../styles/artists.css";
 
 const Kaitlyn = () => {
   const images = [
-    "chain_dice.png",
-    "girl_reaper.png",
-    "snake_black-grey.png",
-    "snake_colour.png",
+    "Kaitlyn.png",
+    "kaitlyn1.jpg",
+    "kaitlyn2.jpg",
+    "kaitlyn3.jpg",
+    "kaitlyn4.jpg",
+    "kaitlyn5.jpg",
+    "kaitlyn6.jpg",
+    "kaitlyn7.jpg",
+    "kaitlyn8.jpg",
+    "kaitlyn9.jpg",
+    "kaitlyn10.jpg",
   ];
 
   return (
