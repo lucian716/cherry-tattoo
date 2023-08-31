@@ -3,10 +3,18 @@ import "../../styles/artists.css";
 
 const Caroline = () => {
   const images = [
-    "chain_dice.png",
-    "girl_reaper.png",
-    "snake_black-grey.png",
-    "snake_colour.png",
+    "Caroline.jpg",
+    "caroline1.jpg",
+    "caroline2.jpg",
+    "caroline3.jpg",
+    "caroline4.jpg",
+    "caroline5.jpg",
+    "caroline6.jpg",
+    "caroline7.jpg",
+    "caroline8.jpg",
+    "caroline9.jpg",
+    "caroline10.jpg",
+    "caroline11.jpg",
   ];
 
   return (
