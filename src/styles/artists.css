@@ -78,7 +78,7 @@ h5 {
   box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
   overflow: hidden;
   position: relative;
-  margin: 60px 60px; /* Adjust margin as needed */
+  margin: 60px 60px; 
 }
 
 .photo-item img {
