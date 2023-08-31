@@ -12,6 +12,7 @@ const Alicia = () => {
   return (
     <div className="artist-page">
       <h1>Alicia</h1>
+      <h5>They/Them</h5>
       <div className="photo-grid">
         {images.map((image, index) => (
           <div key={index} className="photo-item">
