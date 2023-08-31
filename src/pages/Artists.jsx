@@ -6,15 +6,23 @@ const Artists = () => {
   const artists = [
     {
       name: "Erica",
-      image: "/images_artists/erica.png",
+      image: "/images/erica/erica.png",
     },
     {
       name: "Kaitlyn",
-      image: "/images_artists/kaitlyn.png",
+      image: "/images/kaitlyn/kaitlyn.png",
     },
     {
       name: "Caroline",
-      image: "/images_artists/caroline.png",
+      image: "/images/caroline/caroline.png",
+    },
+    {
+      name: "Alicia",
+      image: "/images/alicia/alicia.png",
+    },
+    {
+      name: "Rita",
+      image: "/images/rita/rita.png",
     },
   ];
 
