@@ -15,7 +15,7 @@ const Rita = () => {
       <div className="photo-grid">
         {images.map((image, index) => (
           <div key={index} className="photo-item">
-            <img src={`/images_artists/${image}`} alt={`${index}`} />
+            <img src={`/images/rita/${image}`} alt={`${index}`} />
           </div>
         ))}
       </div>

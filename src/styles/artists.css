@@ -50,6 +50,14 @@ h1 {
   display: flex;
   justify-content: center;
   padding-top: 20px;
+  padding-bottom: 10px;
+  color: #e2acdb;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h5 {
+  display: flex;
+  justify-content: center;
   padding-bottom: 40px;
   color: #e2acdb;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif

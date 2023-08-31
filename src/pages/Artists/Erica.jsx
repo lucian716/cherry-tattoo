@@ -12,10 +12,11 @@ const Erica = () => {
   return (
     <div className="artist-page">
       <h1>Erica Cyr</h1>
+      <h5>She/Her</h5>
       <div className="photo-grid">
         {images.map((image, index) => (
           <div key={index} className="photo-item">
-            <img src={`/images_artists/${image}`} alt={`${index}`} />
+            <img src={`/images/erica/${image}`} alt={`${index}`} />
           </div>
         ))}
       </div>
