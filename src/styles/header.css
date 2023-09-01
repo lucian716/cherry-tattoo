@@ -1,13 +1,25 @@
-.header {
+/* .header {
  background: linear-gradient(to bottom, #fa80ea, #ffffff);
   color: #ffffff;
   padding: 30px;
   display: flex;
   justify-content: space-between; 
   align-items: center;
-  font-family: 'Roboto', sans-serif;
   padding: 20px 0;
   text-align: center; 
+} */
+
+.header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px 0;
+  text-align: center; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1; 
 }
 
 .rotating-cherry {
@@ -40,7 +52,7 @@
 
 .header nav ul li a {
   text-decoration: none;
-  color: #ffffff;
+  color: #e2acdb;
   font-weight: 500;
   text-transform: uppercase;
   padding: 10px;
@@ -56,7 +68,7 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background: #ffffff;
+  background: #e2acdb;
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.3s;
@@ -75,7 +87,7 @@
 
 .header-icons a {
   text-decoration: none;
-  color: #ffffff;
+  color: #e2acdb;
   font-weight: 500;
   text-transform: uppercase;
   padding: 10px;
@@ -94,13 +106,13 @@
   transform: translateX(-50%) scaleX(0);
   width: 100%;
   height: 2px;
-  background: #ffffff;
+  background: #e2acdb;
   transform-origin: center;
   transition: transform 0.3s;
 }
 
 .header-icons a:hover {
-  color: #ffffff;
+  color: #e2acdb;
 }
 
 .header-icons a:hover::before {
