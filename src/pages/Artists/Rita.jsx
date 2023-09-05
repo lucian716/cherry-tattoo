@@ -3,10 +3,16 @@ import "../../styles/artists.css";
 
 const Rita = () => {
   const images = [
-    "chain_dice.png",
-    "girl_reaper.png",
-    "snake_black-grey.png",
-    "snake_colour.png",
+    "rita1.jpg",
+    "rita2.jpg",
+    "rita3.jpg",
+    "rita4.jpg",
+    "rita5.jpg",
+    "rita6.jpg",
+    "rita7.jpg",
+    "rita8.jpg",
+    "rita9.jpg",
+    "rita10.jpg",
   ];
 
   return (

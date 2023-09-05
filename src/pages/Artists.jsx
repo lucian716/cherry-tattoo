@@ -22,7 +22,7 @@ const Artists = () => {
     },
     {
       name: "Rita",
-      image: "/images/rita/rita.png",
+      image: "/images/rita/Rita.jpg",
     },
   ];
 

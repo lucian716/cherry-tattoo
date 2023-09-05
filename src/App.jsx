@@ -5,7 +5,6 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import GoogleMaps from "./components/GoogleMaps";
-
 import Artists from "./pages/Artists";
 import Erica from "./pages/Artists/Erica";
 import Kaitlyn from "./pages/Artists/Kaitlyn";
