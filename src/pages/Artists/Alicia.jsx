@@ -3,16 +3,16 @@ import "../../styles/artists.css";
 
 const Alicia = () => {
   const images = [
-    "caroline1.png",
-    "caroline2.png",
-    "caroline3.png",
-    "caroline4.png",
-    "caroline5.png",
-    "caroline6.png",
-    "caroline7.png",
-    "caroline8.png",
-    "caroline9.png",
-    "caroline10.png",
+    "alicia1.png",
+    "alicia2.png",
+    "alicia3.png",
+    "alicia4.png",
+    "alicia5.png",
+    "alicia6.png",
+    "alicia7.png",
+    "alicia8.png",
+    "alicia9.png",
+    "alicia10.png",
   ];
 
   return (
@@ -22,7 +22,11 @@ const Alicia = () => {
       <div className="photo-grid">
         {images.map((image, index) => (
           <div key={index} className="photo-item">
-            <img src={`/images/alicia/${image}`} alt={`${index}`} />
+            <img
+              src={`/images/alicia/${image}`}
+              alt={`${index}`}
+              loading="lazy"
+            />
           </div>
         ))}
       </div>
