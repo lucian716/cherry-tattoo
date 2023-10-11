@@ -14,7 +14,7 @@ const Artists = () => {
     },
     {
       name: "Caroline",
-      image: "/images/caroline/Caroline.jpg",
+      image: "/images/caroline/Caroline.png",
     },
     {
       name: "Alicia",

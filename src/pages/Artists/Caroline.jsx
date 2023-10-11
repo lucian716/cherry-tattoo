@@ -13,7 +13,6 @@ const Caroline = () => {
     "caroline8.jpg",
     "caroline9.jpg",
     "caroline10.jpg",
-    "caroline11.jpg",
   ];
 
   return (
