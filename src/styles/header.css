@@ -20,14 +20,15 @@
   left: 0;
   width: 100%;
   z-index: 1; 
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 .show-cherry .rotating-cherry {
-  display: block; /* Show the cherry */
+  display: block;
 }
 
 .rotating-cherry {
-  display: none; /* Hide the cherry by default */
+  display: none; 
   justify-content: center;
   width: 100px;
   height: 100px;
