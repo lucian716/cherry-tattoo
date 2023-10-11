@@ -22,12 +22,24 @@
   z-index: 1; 
 }
 
+.show-cherry .rotating-cherry {
+  display: block; /* Show the cherry */
+}
+
 .rotating-cherry {
+  display: none; /* Hide the cherry by default */
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  animation: rotate;
+}
+
+/* .rotating-cherry {
   justify-content: center;
   width: 100px; 
   height: 100px;
   animation: rotate; 
-}
+} */
 
 @keyframes rotate {
   from {
@@ -43,8 +55,11 @@
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
+  margin-left: auto; /* Add this line */
+  margin-right: auto; /* Add this line */
 }
+
 
 .header nav ul li {
   margin: 0 10px;
