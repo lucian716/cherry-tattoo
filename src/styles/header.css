@@ -35,13 +35,6 @@
   animation: rotate;
 }
 
-/* .rotating-cherry {
-  justify-content: center;
-  width: 100px; 
-  height: 100px;
-  animation: rotate; 
-} */
-
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -53,12 +46,9 @@
 
 .header nav ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: center;
-  margin-left: auto; /* Add this line */
-  margin-right: auto; /* Add this line */
+  text-align: center;
 }
 
 
