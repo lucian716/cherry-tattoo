@@ -3,10 +3,16 @@ import "../../styles/artists.css";
 
 const Alicia = () => {
   const images = [
-    "chain_dice.png",
-    "girl_reaper.png",
-    "snake_black-grey.png",
-    "snake_colour.png",
+    "caroline1.png",
+    "caroline2.png",
+    "caroline3.png",
+    "caroline4.png",
+    "caroline5.png",
+    "caroline6.png",
+    "caroline7.png",
+    "caroline8.png",
+    "caroline9.png",
+    "caroline10.png",
   ];
 
   return (
