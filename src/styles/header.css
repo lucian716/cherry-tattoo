@@ -11,7 +11,7 @@
 .nav-shift ul {
   display: block;
   z-index: 2;
-  /* Your navigation styles here */
+  list-style: none;
 }
 
 /* Media query for screens with a max-width of 768px */
@@ -23,7 +23,7 @@
   .nav-shift ul {
     display: none;
     z-index: 2;
-    /* Your navigation styles here */
+      list-style: none;
   }
 }
 
@@ -46,7 +46,7 @@
 
 .rotating-cherry {
   display: block;
-  justify-content: center; /* To center the cherry gif */
+  justify-content: center;
   width: 100px;
   height: 100px;
   animation: rotate;
@@ -66,7 +66,7 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  flex-grow: 1; /* To make the nav links occupy available space and push the icons to the far right */
+  flex-grow: 1;
 }
 
 .header nav ul li {

@@ -5,10 +5,8 @@ import cherryGif from "./cherry_rotating.gif";
 import "../styles/header.css";
 
 const Header = () => {
-  // Create a state to manage the visibility of the mobile menu
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
 
-  // Function to toggle the mobile menu visibility
   const toggleMobileMenu = () => {
     setMobileMenuVisible(!mobileMenuVisible);
   };
