@@ -2,10 +2,9 @@
   color: #e2acdb;
   display: flex;
   text-align: center;
-  margin-top: 100px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .google-maps-container {
-  margin: 50px; 
+  margin: 3rem 8rem 3rem; 
 }
