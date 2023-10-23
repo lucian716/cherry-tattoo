@@ -1,9 +1,8 @@
 .video-container {
   max-width: 100%; 
-  margin: 50px auto;
+  margin: 10rem 5rem 5rem;
   position: relative;
   overflow: hidden;
-  margin-top: 2rem; 
 }
 
 
