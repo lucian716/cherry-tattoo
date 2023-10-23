@@ -1,10 +1,10 @@
 .mobile-menu-icon {
-  display: none; /* Initially hidden on larger screens */
+  display: block; 
   cursor: pointer;
   padding: 10px;
 }
 
-.mobile-menu-icon.bar {
+.mobile-menu-icon .bar {
   width: 25px;
   height: 3px;
   background-color: #fff;
@@ -12,7 +12,26 @@
   transition: 0.4s;
 }
 
-/* Display the menu icon and hide the nav links on smaller screens */
+/* Hide the nav links by default */
+.nav-shift ul {
+  display: none;
+  z-index: 2; 
+}
+
+.nav-shift ul.active {
+  display: flex;
+  flex-direction: column;
+  background-color: #e2acdb; 
+  position: absolute; 
+  top: 100%; 
+  left: 0;
+}
+
+.nav-shift ul li {
+  margin: 10px 0;
+  text-align: center; /* Center the menu items */
+}
+
 @media (max-width: 768px) {
   .mobile-menu-icon {
     display: block;
@@ -47,7 +66,7 @@
 }
 
 .rotating-cherry {
-  display: block; /* Change this line */
+  display: block; 
   justify-content: center;
   width: 100px;
   height: 100px;
