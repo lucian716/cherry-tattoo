@@ -29,12 +29,9 @@
   }
 }
 
-
-
 .header {
   display: flex;
   justify-content: space-between; 
-  text-align: center; 
   align-items: center;
   padding: 20px 0;
   position: fixed;
@@ -42,20 +39,21 @@
   left: 0;
   width: 100%;
   z-index: 1; 
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .show-cherry .rotating-cherry {
-  display: flex;
+  display: block;
 }
 
 .rotating-cherry {
-  display: flex; 
+  display: block; /* Change this line */
   justify-content: center;
   width: 100px;
   height: 100px;
   animation: rotate;
 }
+
 
 @keyframes rotate {
   from {
