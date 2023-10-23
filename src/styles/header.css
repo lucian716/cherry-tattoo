@@ -1,52 +1,31 @@
 .mobile-menu-icon {
-  display: block; 
+  display: none; /* Initially hidden on larger screens */
   cursor: pointer;
   padding: 10px;
 }
 
-.mobile-menu-icon .bar {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 6px 0;
-  transition: 0.4s;
+.mobile-menu-icon.active .bar {
+  /* Your mobile menu icon styles here */
 }
 
-/* Hide the nav links by default */
 .nav-shift ul {
-  display: none;
-  z-index: 2; 
-}
-
-.nav-shift ul.active {
-  display: flex;
-  flex-direction: column;
-  background-color: #e2acdb; 
-  position: absolute; 
-  top: 100%; 
-  left: 0;
-}
-
-.nav-shift ul li {
-  margin: 10px 0;
-  text-align: center; /* Center the menu items */
+  display: block; /* Initially visible on larger screens */
+  z-index: 2;
+  /* Your navigation styles here */
 }
 
 @media (max-width: 768px) {
   .mobile-menu-icon {
-    display: block;
+    display: block; /* Display the mobile menu icon on smaller screens */
   }
+
   .nav-shift ul {
-    display: none;
-  }
-  .nav-shift ul.active {
-    display: flex;
-    flex-direction: column;
-  }
-  .nav-shift ul li {
-    margin: 10px 0;
+    display: none; /* Hide the navigation links on smaller screens */
+    z-index: 2;
+    /* Your navigation styles here */
   }
 }
+
 
 .header {
   display: flex;

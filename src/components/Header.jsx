@@ -16,7 +16,10 @@ const Header = () => {
   return (
     <header className="header">
       <img src={cherryGif} alt="Rotating Cherry" className="rotating-cherry" />
-      <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
+      <div
+        className={`mobile-menu-icon ${mobileMenuVisible ? "active" : ""}`}
+        onClick={toggleMobileMenu}
+      >
         <FaBars />
       </div>
       <nav className={`nav-shift ${mobileMenuVisible ? "active" : ""}`}>
