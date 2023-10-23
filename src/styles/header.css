@@ -23,7 +23,7 @@
   .nav-shift ul {
     display: none;
     z-index: 2;
-      list-style: none;
+    list-style: none;
   }
 }
 
@@ -32,11 +32,6 @@
   justify-content: space-between; 
   align-items: center;
   padding: 20px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
