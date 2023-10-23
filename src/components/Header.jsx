@@ -1,14 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaInstagram, FaEnvelope } from "react-icons/fa";
+import { FaInstagram, FaEnvelope, FaBars } from "react-icons/fa";
 import cherryGif from "./cherry_rotating.gif";
 import "../styles/header.css";
 
 const Header = () => {
+  // Create a state to manage the visibility of the mobile menu
+  const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
+
+  // Function to toggle the mobile menu visibility
+  const toggleMobileMenu = () => {
+    setMobileMenuVisible(!mobileMenuVisible);
+  };
+
   return (
     <header className="header">
       <img src={cherryGif} alt="Rotating Cherry" className="rotating-cherry" />
-      <nav className="nav-shift">
+      <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
+        <FaBars />
+      </div>
+      <nav className={`nav-shift ${mobileMenuVisible ? "active" : ""}`}>
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -91,4 +102,3 @@ export default Header;
 // };
 
 // export default Header;
-
