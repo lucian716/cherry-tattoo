@@ -24,11 +24,11 @@
 }
 
 .show-cherry .rotating-cherry {
-  display: block;
+  display: flex;
 }
 
 .rotating-cherry {
-  display: none; 
+  display: flex; 
   justify-content: center;
   width: 100px;
   height: 100px;
