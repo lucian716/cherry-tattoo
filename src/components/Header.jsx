@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <img src={cherryGif} alt="Rotating Cherry" className="rotating-cherry" />
+      {/* ... other header content ... */}
       <div
         className={`mobile-menu-icon ${mobileMenuVisible ? "active" : ""}`}
         onClick={toggleMobileMenu}

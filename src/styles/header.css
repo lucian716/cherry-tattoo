@@ -14,6 +14,9 @@
   list-style: none;
 }
 
+/* Default styles */
+/* ... */
+
 /* Media query for screens with a max-width of 768px */
 @media (max-width: 768px) {
   .mobile-menu-icon {
@@ -22,10 +25,30 @@
 
   .nav-shift ul {
     display: none;
-    z-index: 2;
     list-style: none;
+    z-index: 2;
+    position: absolute; /* This ensures the menu appears correctly on smaller screens */
+    top: 100%; /* Adjust this value as necessary */
+    left: 0; /* Adjust this value as necessary */
+    background-color: #e2acdb; /* Background color for the dropdown */
+    width: 100%; /* Adjust this value as necessary */
+    text-align: center; /* Center align the links */
+  }
+
+  .nav-shift ul.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-shift ul li {
+    margin: 10px 0;
   }
 }
+
+/* ... */
+
+
 
 .header {
   display: flex;
