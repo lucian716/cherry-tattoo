@@ -31,26 +31,24 @@ const Header = () => {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
-          {/* Include Instagram and Email icons in the mobile menu */}
-          <li>
-            <a
-              href="https://www.instagram.com/cherrytattoo.mtl/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaInstagram className="icon" /> Instagram
-            </a>
-          </li>
-          <li>
-            <a
-              href="mailto:example@example.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaEnvelope className="icon" /> Email
-            </a>
-          </li>
         </ul>
+        <div className="mobile-icons">
+          {/* Links for Instagram and Email in the mobile menu */}
+          <a
+            href="https://www.instagram.com/cherrytattoo.mtl/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram className="icon" /> Instagram
+          </a>
+          <a
+            href="mailto:example@example.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaEnvelope className="icon" /> Email
+          </a>
+        </div>
       </nav>
     </header>
   );
