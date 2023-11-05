@@ -1,34 +1,128 @@
 @media (max-width: 768px) {
   .mobile-menu-icon {
-    display: block; 
-    cursor: pointer; 
-    padding: 10px; 
+    display: block; /* Show the hamburger icon */
+    cursor: pointer; /* Define the pointer cursor */
+    padding: 10px; /* Define the padding */
   }
 
   .nav-shift ul {
-    display: none; 
+    display: none; /* Hide the list of links initially */
     z-index: 2;
     list-style: none;
   }
 
-  .header-icons {
-    display: none;
-  }
+.header-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
-  .header.active .nav-shift ul,
-  .header.active .header-icons {
-    display: flex; 
-  }
+.header-icons a {
+  text-decoration: none;
+  color: #e2acdb;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s;
+  font-size: 30px;
+  margin-right: 25px;
+}
 
+.header-icons a::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 100%;
+  height: 2px;
+  background: #e2acdb;
+  transform-origin: center;
+  transition: transform 0.3s;
+}
 
-  .mobile-icons {
-    display: flex;
+.header-icons a:hover {
+  color: #e2acdb;
+}
+
+.header-icons a:hover::before {
+  transform: translateX(-50%) scaleX(1);
+}
+
+  .header.active .nav-shift ul {
+    display: flex; /* Show the menu when the header has the 'active' class */
     flex-direction: column;
     align-items: center;
+    background: #fff; /* Background color for the menu */
+    /* Add other necessary styles to design the menu */
+  }
+
+  .header.active .header-icons {
+    display: flex; /* Show the icons when the header has the 'active' class */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Adjust as needed */
+    /* Add other styles for the icons in mobile view */
   }
 }
 
+/* For larger screens (min-width: 769px) */
+@media (min-width: 769px) {
+  .mobile-menu-icon {
+    display: none; /* Hide the hamburger icon on larger screens */
+  }
 
+  .nav-shift ul {
+    display: flex; /* Show the list of links on larger screens */
+    /* Add other styles for the list of links on larger screens */
+  }
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header-icons a {
+  text-decoration: none;
+  color: #e2acdb;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s;
+  font-size: 30px;
+  margin-right: 25px;
+}
+.header-icons a::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 100%;
+  height: 2px;
+  background: #e2acdb;
+  transform-origin: center;
+  transition: transform 0.3s;
+}
+
+.header-icons a:hover {
+  color: #e2acdb;
+}
+
+.header-icons a:hover::before {
+  transform: translateX(-50%) scaleX(1);
+}
+}
+
+/* All other header styles, irrespective of screen size */
 .header {
   display: flex;
   justify-content: space-between;
