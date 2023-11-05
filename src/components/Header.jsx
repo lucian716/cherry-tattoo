@@ -4,6 +4,7 @@ import { FaInstagram, FaEnvelope, FaBars } from "react-icons/fa";
 import cherryGif from "./cherry_rotating.gif";
 import "../styles/header.css";
 
+// Header component
 const Header = () => {
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
 
@@ -13,7 +14,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      {/* ... other header content ... */}
+      <img src={cherryGif} alt="Rotating Cherry" className="rotating-cherry" />
       <div
         className={`mobile-menu-icon ${mobileMenuVisible ? "active" : ""}`}
         onClick={toggleMobileMenu}
@@ -23,29 +24,35 @@ const Header = () => {
       <nav className={`nav-shift ${mobileMenuVisible ? "active" : ""}`}>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">
+              Home <FaHome />
+            </Link>
           </li>
           <li>
-            <Link to="/artists">Artists</Link>
+            <Link to="/artists">
+              Artists <FaUsers />
+            </Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">
+              Contact <FaEnvelope />
+            </Link>
           </li>
         </ul>
+        <div className="header-icons-mobile">
+          <a href="https://www.instagram.com/cherrytattoo.mtl/" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="icon" />
+          </a>
+          <a href="mailto:example@example.com" target="_blank" rel="noopener noreferrer">
+            <FaEnvelope className="icon" />
+          </a>
+        </div>
       </nav>
       <div className="header-icons">
-        <a
-          href="https://www.instagram.com/cherrytattoo.mtl/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://www.instagram.com/cherrytattoo.mtl/" target="_blank" rel="noopener noreferrer">
           <FaInstagram className="icon" />
         </a>
-        <a
-          href="mailto:example@example.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="mailto:example@example.com" target="_blank" rel="noopener noreferrer">
           <FaEnvelope className="icon" />
         </a>
       </div>
