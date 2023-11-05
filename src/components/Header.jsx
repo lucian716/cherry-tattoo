@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
-  FaHome,
-  FaUsers,
   FaInstagram,
   FaEnvelope,
   FaBars,
-} from "react-icons/fa";
+  FaHome,
+  FaUsers,
+} from "react-icons/fa"; // Importing FaHome and FaUsers icons
 import cherryGif from "./cherry_rotating.gif";
 import "../styles/header.css";
-
 
 const Header = () => {
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
@@ -31,34 +30,32 @@ const Header = () => {
         <ul>
           <li>
             <Link to="/">
-              Home <FaHome />
+              <FaHome /> Home {/* Displaying FaHome as a link */}
             </Link>
           </li>
           <li>
             <Link to="/artists">
-              Artists <FaUsers />
+              <FaUsers /> Artists {/* Displaying FaUsers as a link */}
             </Link>
           </li>
           <li>
-            <Link to="/contact">
-              Contact <FaEnvelope />
-            </Link>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
-        <div className="header-icons-mobile">
-          <a href="https://www.instagram.com/cherrytattoo.mtl/" target="_blank" rel="noopener noreferrer">
-            <FaInstagram className="icon" />
-          </a>
-          <a href="mailto:example@example.com" target="_blank" rel="noopener noreferrer">
-            <FaEnvelope className="icon" />
-          </a>
-        </div>
       </nav>
       <div className="header-icons">
-        <a href="https://www.instagram.com/cherrytattoo.mtl/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.instagram.com/cherrytattoo.mtl/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaInstagram className="icon" />
         </a>
-        <a href="mailto:example@example.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="mailto:example@example.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaEnvelope className="icon" />
         </a>
       </div>

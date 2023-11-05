@@ -20,17 +20,17 @@
     display: block;
   }
 
-.nav-shift ul {
-  display: none;
-  list-style: none;
-  z-index: 2;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #e2acdb;
-  width: 100%;
-  text-align: center;
-}
+  .nav-shift ul {
+    display: none;
+    z-index: 2;
+    list-style: none;
+  }
+
+  .header-icons :is(svg[data-icon='home'], svg[data-icon='users']) {
+    display: none;
+  }
+
+
 
 .nav-shift ul.active {
   display: flex;
