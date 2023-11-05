@@ -9,7 +9,10 @@ const Header = () => {
 
   const toggleMobileMenu = () => {
     setMobileMenuVisible(!mobileMenuVisible);
+    document.querySelector(".header").classList.toggle("active");
   };
+
+ 
 
   return (
     <header className="header">
