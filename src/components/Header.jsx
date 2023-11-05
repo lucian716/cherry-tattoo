@@ -1,12 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  FaInstagram,
-  FaEnvelope,
-  FaBars,
-  FaHome,
-  FaUsers,
-} from "react-icons/fa"; // Importing FaHome and FaUsers icons
+import { FaInstagram, FaEnvelope, FaBars } from "react-icons/fa";
 import cherryGif from "./cherry_rotating.gif";
 import "../styles/header.css";
 
@@ -29,36 +23,35 @@ const Header = () => {
       <nav className={`nav-shift ${mobileMenuVisible ? "active" : ""}`}>
         <ul>
           <li>
-            <Link to="/">
-              <FaHome /> Home {/* Displaying FaHome as a link */}
-            </Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/artists">
-              <FaUsers /> Artists {/* Displaying FaUsers as a link */}
-            </Link>
+            <Link to="/artists">Artists</Link>
           </li>
           <li>
             <Link to="/contact">Contact</Link>
           </li>
+          {/* Include Instagram and Email icons in the mobile menu */}
+          <li>
+            <a
+              href="https://www.instagram.com/cherrytattoo.mtl/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="icon" /> Instagram
+            </a>
+          </li>
+          <li>
+            <a
+              href="mailto:example@example.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaEnvelope className="icon" /> Email
+            </a>
+          </li>
         </ul>
       </nav>
-      <div className="header-icons">
-        <a
-          href="https://www.instagram.com/cherrytattoo.mtl/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaInstagram className="icon" />
-        </a>
-        <a
-          href="mailto:example@example.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaEnvelope className="icon" />
-        </a>
-      </div>
     </header>
   );
 };

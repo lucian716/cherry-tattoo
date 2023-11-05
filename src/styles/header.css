@@ -26,36 +26,11 @@
     list-style: none;
   }
 
-  .header-icons :is(svg[data-icon='home'], svg[data-icon='users']) {
+  .header a .icon {
     display: none;
   }
-
-
-
-.nav-shift ul.active {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-.nav-shift ul li {
-  margin: 10px 0;
-}
-
-
-.header-icons-mobile {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px; 
-}
-
-.header-icons-mobile a {
-  text-decoration: none;
-  color: #fff; 
-  font-size: 24px; 
-  margin: 0 10px; 
-}
-}
 
 .header {
   display: flex;
