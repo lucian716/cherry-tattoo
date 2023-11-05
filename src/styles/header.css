@@ -15,38 +15,47 @@
 }
 
 
-/* Media query for screens with a max-width of 768px */
 @media (max-width: 768px) {
   .mobile-menu-icon {
     display: block;
   }
 
-  .nav-shift ul {
-    display: none;
-    list-style: none;
-    z-index: 2;
-    position: absolute; /* This ensures the menu appears correctly on smaller screens */
-    top: 100%; /* Adjust this value as necessary */
-    left: 0; /* Adjust this value as necessary */
-    background-color: #e2acdb; /* Background color for the dropdown */
-    width: 100%; /* Adjust this value as necessary */
-    text-align: center; /* Center align the links */
-  }
-
-  .nav-shift ul.active {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-shift ul li {
-    margin: 10px 0;
-  }
+.nav-shift ul {
+  display: none;
+  list-style: none;
+  z-index: 2;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #e2acdb;
+  width: 100%;
+  text-align: center;
 }
 
-/* ... */
+.nav-shift ul.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-shift ul li {
+  margin: 10px 0;
+}
 
 
+.header-icons-mobile {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; 
+}
+
+.header-icons-mobile a {
+  text-decoration: none;
+  color: #fff; 
+  font-size: 24px; 
+  margin: 0 10px; 
+}
+}
 
 .header {
   display: flex;

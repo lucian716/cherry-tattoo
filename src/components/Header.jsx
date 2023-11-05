@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaInstagram, FaEnvelope, FaBars } from "react-icons/fa";
+import {
+  FaHome,
+  FaUsers,
+  FaInstagram,
+  FaEnvelope,
+  FaBars,
+} from "react-icons/fa";
 import cherryGif from "./cherry_rotating.gif";
 import "../styles/header.css";
 
-// Header component
+
 const Header = () => {
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
 
