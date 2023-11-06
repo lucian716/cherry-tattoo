@@ -231,4 +231,32 @@
 
 .header-icons a:hover::before {
   transform: translateX(-50%) scaleX(1);
+} 
+
+.mobile-icons a {
+  text-decoration: none;
+  color: #e2acdb;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.mobile-icons a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #e2acdb;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s;
+}
+
+.mobile-icons a:hover::after {
+  transform: scaleX(1);
 }
