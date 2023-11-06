@@ -14,7 +14,6 @@ const Header = () => {
 
   return (
     <header className="header">
-      {/* ... (rest of your code) ... */}
       <nav className={`nav-shift ${mobileMenuVisible ? "active" : ""}`}>
         <ul>
           <li>
@@ -28,11 +27,11 @@ const Header = () => {
           </li>
           <li className="mobile-icons">
             <FaInstagram className="icon" />
-            <Link to="/">Instagram</Link>
+            <Link to="/"></Link>
           </li>
           <li className="mobile-icons">
             <FaEnvelope className="icon" />
-            <Link to="/">Email</Link>
+            <Link to="/"></Link>
           </li>
         </ul>
       </nav>
