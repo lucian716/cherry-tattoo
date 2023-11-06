@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaInstagram, FaEnvelope } from "react-icons/fa";
 import cherryGif from "./cherry_rotating.gif";
-import "../styles/burger.css";
-import "../styles/menu.css";  
+import "../styles/burger.css"; 
+import "../styles/menu.css"; 
+
 
 const Header = () => {
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
@@ -14,9 +15,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <StyledBurger open={mobileMenuVisible} onClick={toggleMobileMenu} />{" "}
-      <StyledMenu open={mobileMenuVisible}>
-        {" "}
+      <nav className={`nav-shift ${mobileMenuVisible ? "active" : ""}`}>
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -36,7 +35,7 @@ const Header = () => {
             <Link to="/email"></Link>
           </li>
         </ul>
-      </StyledMenu>
+      </nav>
     </header>
   );
 };
