@@ -4,11 +4,11 @@ import "../styles/footer.css";
 const Footer = () => {
   return (
     <footer className="footer">
-      <h4>Cherry Tattoo</h4>
+      <h3>Cherry Tattoo</h3>
       <p>
-        5555 Av. de Gaspe,
+        5555 Av. de Gaspe
         <br />
-        suite 214,
+        suite 214
          <br />
         Montreal, QC H2T 2A3
       </p>
