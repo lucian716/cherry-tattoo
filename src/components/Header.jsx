@@ -12,17 +12,9 @@ const Header = () => {
     document.querySelector(".header").classList.toggle("active");
   };
 
- 
-
   return (
     <header className="header">
-      <img src={cherryGif} alt="Rotating Cherry" className="rotating-cherry" />
-      <div
-        className={`mobile-menu-icon ${mobileMenuVisible ? "active" : ""}`}
-        onClick={toggleMobileMenu}
-      >
-        <FaBars />
-      </div>
+      {/* ... (rest of your code) ... */}
       <nav className={`nav-shift ${mobileMenuVisible ? "active" : ""}`}>
         <ul>
           <li>
@@ -34,15 +26,15 @@ const Header = () => {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
+          <li className="mobile-icons">
+            <FaInstagram className="icon" />
+            <Link to="/">Instagram</Link>
+          </li>
+          <li className="mobile-icons">
+            <FaEnvelope className="icon" />
+            <Link to="/">Email</Link>
+          </li>
         </ul>
-         <div className="mobile-icons">
-          <Link to="/" className="mobile-icons-link">
-            <FaInstagram className="icon" /> Instagram
-          </Link>
-          <Link to="/" className="mobile-icons-link">
-            <FaEnvelope className="icon" /> Email
-            </Link>
-        </div>
       </nav>
     </header>
   );

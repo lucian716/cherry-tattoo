@@ -1,12 +1,12 @@
 @media (max-width: 768px) {
   .mobile-menu-icon {
-    display: block; /* Show the hamburger icon */
-    cursor: pointer; /* Define the pointer cursor */
-    padding: 10px; /* Define the padding */
+    display: block;
+    cursor: pointer; 
+    padding: 10px; 
   }
 
   .nav-shift ul {
-    display: none; /* Hide the list of links initially */
+    display: none; 
     z-index: 2;
     list-style: none;
   }
@@ -53,32 +53,31 @@
 }
 
   .header.active .nav-shift ul {
-    display: flex; /* Show the menu when the header has the 'active' class */
+    display: flex; 
     flex-direction: column;
     align-items: center;
-    background: #fff; /* Background color for the menu */
-    /* Add other necessary styles to design the menu */
+    background: #fff; 
   }
 
   .header.active .header-icons {
-    display: flex; /* Show the icons when the header has the 'active' class */
+    display: flex; 
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 20px; /* Adjust as needed */
-    /* Add other styles for the icons in mobile view */
+    margin-top: 20px;
+
   }
 }
 
-/* For larger screens (min-width: 769px) */
+
 @media (min-width: 769px) {
   .mobile-menu-icon {
-    display: none; /* Hide the hamburger icon on larger screens */
+    display: none; 
   }
 
   .nav-shift ul {
-    display: flex; /* Show the list of links on larger screens */
-    /* Add other styles for the list of links on larger screens */
+    display: flex; 
+    
   }
 
 .header-icons {
@@ -122,7 +121,6 @@
 }
 }
 
-/* All other header styles, irrespective of screen size */
 .header {
   display: flex;
   justify-content: space-between;
@@ -233,6 +231,16 @@
   transform: translateX(-50%) scaleX(1);
 } 
 
+.mobile-icons {
+  list-style: none; 
+}
+
+.mobile-icons li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
 .mobile-icons a {
   text-decoration: none;
   color: #e2acdb;
@@ -242,6 +250,7 @@
   position: relative;
   display: inline-block;
   transition: color 0.3s;
+  margin-left: 10px; 
 }
 
 .mobile-icons a::after {
