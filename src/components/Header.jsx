@@ -1,20 +1,22 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaInstagram, FaEnvelope, FaBars } from "react-icons/fa";
+import { FaInstagram, FaEnvelope } from "react-icons/fa";
 import cherryGif from "./cherry_rotating.gif";
-import "../styles/header.css";
+import "../styles/burger.css";
+import "../styles/menu.css";  
 
 const Header = () => {
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
 
   const toggleMobileMenu = () => {
     setMobileMenuVisible(!mobileMenuVisible);
-    document.querySelector(".header").classList.toggle("active");
   };
 
   return (
     <header className="header">
-      <nav className={`nav-shift ${mobileMenuVisible ? "active" : ""}`}>
+      <StyledBurger open={mobileMenuVisible} onClick={toggleMobileMenu} />{" "}
+      <StyledMenu open={mobileMenuVisible}>
+        {" "}
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -27,14 +29,14 @@ const Header = () => {
           </li>
           <li className="mobile-icons">
             <FaInstagram className="icon" />
-            <Link to="/"></Link>
+            <Link to="/instagram"></Link>
           </li>
           <li className="mobile-icons">
             <FaEnvelope className="icon" />
-            <Link to="/"></Link>
+            <Link to="/email"></Link>
           </li>
         </ul>
-      </nav>
+      </StyledMenu>
     </header>
   );
 };
