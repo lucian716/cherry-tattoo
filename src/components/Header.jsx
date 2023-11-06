@@ -3,45 +3,7 @@ import { Link } from "react-router-dom";
 import { FaInstagram, FaEnvelope } from "react-icons/fa";
 import cherryGif from "./cherry_rotating.gif";
 import "../styles/header.css"; 
-import styled from "styled-components";
 
-const StyledBurger = styled.button`
-  position: absolute;
-  colour: pink;
-  top: 5%;
-  right: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 2rem;
-  height: 2rem;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  z-index: 10;
-
-  div {
-    width: 2rem;
-    height: 0.25rem;
-    background: ${({ open }) => (open ? "#ccc" : "#333")};
-    border-radius: 10px;
-    transform-origin: 1px;
-    transition: all 0.3s linear;
-
-    &:first-child {
-      transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
-    }
-
-    &:nth-child(2) {
-      opacity: ${({ open }) => (open ? 0 : 1)};
-    }
-
-    &:nth-child(3) {
-      transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
-    }
-  }
-`;
 
 const Header = () => {
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
@@ -53,13 +15,16 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo">
-        <img src={cherryGif} alt="Cherry Logo" />
+        <img src={cherryGif} alt="Cherry Logo" className="logo-image" />
       </div>
-      <StyledBurger open={mobileMenuVisible} onClick={toggleMobileMenu}>
+      <button
+        className={`burger-button ${mobileMenuVisible ? "open" : ""}`}
+        onClick={toggleMobileMenu}
+      >
         <div />
         <div />
         <div />
-      </StyledBurger>
+      </button>
 
       <nav className={`nav-shift ${mobileMenuVisible ? "active" : ""}`}>
         <ul>
@@ -72,20 +37,16 @@ const Header = () => {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
-          {mobileMenuVisible && (
-            <>
-              <li className="mobile-icons">
-                <Link to="https://www.instagram.com/cherrytattoo.mtl/">
-                  <FaInstagram className="icon" />
-                </Link>
-              </li>
-              <li className="mobile-icons">
-                <Link to="mailto:example@example.com">
-                  <FaEnvelope className="icon" />
-                </Link>
-              </li>
-            </>
-          )}
+          <li className="mobile-icons">
+            <a href="https://www.instagram.com/cherrytattoo.mtl/">
+              <FaInstagram className="icon" />
+            </a>
+          </li>
+          <li className="mobile-icons">
+            <a href="mailto:example@example.com">
+              <FaEnvelope className="icon" />
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
