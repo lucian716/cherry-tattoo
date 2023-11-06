@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaInstagram, FaEnvelope } from "react-icons/fa";
 import cherryGif from "./cherry_rotating.gif";
-import "../styles/burger.css"; 
-import "../styles/menu.css"; 
-
+import "../styles/header.css"; 
 
 const Header = () => {
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
@@ -15,6 +13,14 @@ const Header = () => {
 
   return (
     <header className="header">
+      <div className="burger-menu" onClick={toggleMobileMenu}>
+        <div className={`styled-burger ${mobileMenuVisible ? "open" : ""}`}>
+          <div />
+          <div />
+          <div />
+        </div>
+      </div>
+
       <nav className={`nav-shift ${mobileMenuVisible ? "active" : ""}`}>
         <ul>
           <li>
@@ -27,12 +33,22 @@ const Header = () => {
             <Link to="/contact">Contact</Link>
           </li>
           <li className="mobile-icons">
-            <FaInstagram className="icon" />
-            <Link to="/instagram"></Link>
+            <a
+              href="https://www.instagram.com/cherrytattoo.mtl/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="icon" />
+            </a>
           </li>
           <li className="mobile-icons">
-            <FaEnvelope className="icon" />
-            <Link to="/email"></Link>
+            <a
+              href="mailto:example@example.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaEnvelope className="icon" />
+            </a>
           </li>
         </ul>
       </nav>

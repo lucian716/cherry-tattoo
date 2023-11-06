@@ -1,7 +1,7 @@
 /* all artists */
 
 .artists h3 {
-  color: #e2acdb;
+  color: pink;
   padding-bottom: 10px;
   font-size: 40px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
@@ -46,7 +46,7 @@ h1 {
   display: flex;
   justify-content: center;
   padding-bottom: 10px;
-  color: #e2acdb;
+  color: pink;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -54,7 +54,7 @@ h5 {
   display: flex;
   justify-content: center;
   padding-bottom: 20px; 
-  color: #e2acdb;
+  color: pink;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 

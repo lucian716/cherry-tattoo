@@ -469,3 +469,54 @@
     transform: translateX(-50%) scaleX(1);
   }
 }
+
+@media (max-width: 768px) {
+  .burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    padding: 0 20px; 
+    color: pink; 
+    cursor: pointer;
+  }
+
+  
+  .burger-menu .styled-burger {
+    color: pink; 
+    cursor: pointer;
+  }
+
+  .nav-shift ul {
+    display: none;
+    z-index: 2;
+    list-style: none;
+  }
+
+  .mobile-icons a {
+    color: pink; 
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s;
+    margin-left: 10px;
+  }
+
+  .mobile-icons a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: pink; 
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s;
+  }
+
+  .mobile-icons a:hover::after {
+    transform: scaleX(1);
+  }
+}
