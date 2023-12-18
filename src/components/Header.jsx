@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaInstagram, FaEnvelope } from "react-icons/fa";
 import cherryGif from "./cherry_rotating.gif";
-import "../styles/header.css"; 
-
+import "../styles/header.css";
 
 const Header = () => {
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
@@ -25,7 +24,6 @@ const Header = () => {
         <div />
         <div />
       </button>
-
       <nav className={`nav-shift ${mobileMenuVisible ? "active" : ""}`}>
         <ul>
           <li>
@@ -37,6 +35,10 @@ const Header = () => {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
+        </ul>
+      </nav>
+      <div className="icon-container">
+        <ul>
           <li className="mobile-icons">
             <a
               href="https://www.instagram.com/cherrytattoo.mtl/"
@@ -56,7 +58,7 @@ const Header = () => {
             </a>
           </li>
         </ul>
-      </nav>
+      </div>
     </header>
   );
 };
