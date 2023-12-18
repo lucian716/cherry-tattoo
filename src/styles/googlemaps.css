@@ -8,3 +8,9 @@
 .google-maps-container {
   margin: 3rem 8rem 3rem; 
 }
+
+@media (max-width: 768px) {
+  .google-maps-container {
+    margin: 3rem 1.5rem 3rem;
+  }
+}

@@ -1,10 +1,16 @@
-.video-container {
+/* .video-container {
   max-width: 100%; 
   margin: 3rem 8rem 3rem;
   position: relative;
   overflow: hidden;
-}
+} */
 
+.video-container {
+  max-width: 100%;
+  margin: 3rem 8rem 3rem;
+  position: relative;
+  overflow: hidden;
+}
 
 .video-container video {
   width: 100%;

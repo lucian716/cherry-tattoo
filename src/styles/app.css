@@ -30,6 +30,9 @@ body {
     flex-grow: 1;
   }
 
+  .video-container {
+    margin: 3rem 1rem 3rem; 
+  }
 
   .artist-grid {
     grid-template-columns: 1fr;
@@ -41,7 +44,7 @@ body {
     margin: 0;
   }
 
-   .photo-item {
+  .photo-item {
     flex: 1 0 calc(100% - 40px);
     margin: 20px 0; 
   }
