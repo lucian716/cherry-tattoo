@@ -38,12 +38,20 @@ const Header = () => {
             <Link to="/contact">Contact</Link>
           </li>
           <li className="mobile-icons">
-            <a href="https://www.instagram.com/cherrytattoo.mtl/">
+            <a
+              href="https://www.instagram.com/cherrytattoo.mtl/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaInstagram className="icon" />
             </a>
           </li>
           <li className="mobile-icons">
-            <a href="mailto:cherrytattoomtl@gmail.com">
+            <a
+              href="mailto:cherrytattoomtl@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaEnvelope className="icon" />
             </a>
           </li>
