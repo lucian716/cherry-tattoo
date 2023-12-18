@@ -43,7 +43,7 @@ const Header = () => {
             </a>
           </li>
           <li className="mobile-icons">
-            <a href="mailto:example@example.com">
+            <a href="mailto:cherrytattoomtl@gmail.com">
               <FaEnvelope className="icon" />
             </a>
           </li>
