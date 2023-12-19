@@ -9,8 +9,10 @@ const Footer = () => {
         5555 Av. de Gaspe
         <br />
         suite 214
-         <br />
+        <br />
         Montreal, QC H2T 2A3
+        <br />
+        cherrytattoomtl@gmail.com
       </p>
     </footer>
   );

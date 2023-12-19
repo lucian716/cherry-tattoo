@@ -30,7 +30,7 @@ text-decoration: none;
 
 .artist-item img {
   width: 100%;
-  max-width: 400px;
+  max-width: auto;
   height: auto;
   box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
   transition: transform 400ms ease-out;
@@ -45,7 +45,6 @@ text-decoration: none;
 h1 {
   display: flex;
   justify-content: center;
-  padding-bottom: 1rem;
   color: pink;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
