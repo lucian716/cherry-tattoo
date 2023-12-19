@@ -11,7 +11,7 @@ const Caroline = () => {
     "caroline6.jpg",
     "caroline7.jpg",
     "caroline8.jpg",
-    "caroline9.jpg",
+    "caroline9.png",
     "caroline10.jpg",
   ];
 

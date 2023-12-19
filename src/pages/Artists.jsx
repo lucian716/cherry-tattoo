@@ -6,7 +6,7 @@ const Artists = () => {
   const artists = [
     {
       name: "Erica",
-      image: "/images/erica/Erica.jpg",
+      image: "/images/erica/Erica.png",
     },
     {
       name: "Kaitlyn",
@@ -14,7 +14,7 @@ const Artists = () => {
     },
     {
       name: "Caroline",
-      image: "/images/caroline/Caroline.png",
+      image: "/images/caroline/Caroline.jpg",
     },
     {
       name: "Alicia",
@@ -22,7 +22,7 @@ const Artists = () => {
     },
     {
       name: "Rita",
-      image: "/images/rita/Rita.jpg",
+      image: "/images/rita/Rita.png",
     },
   ];
 
