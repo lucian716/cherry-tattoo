@@ -6,7 +6,7 @@ const Artists = () => {
   const artists = [
     {
       name: "Erica",
-      image: "/images/erica/erica.png",
+      image: "/images/erica/Erica.jpg",
     },
     {
       name: "Kaitlyn",
