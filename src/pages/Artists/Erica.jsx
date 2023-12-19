@@ -3,10 +3,16 @@ import "../../styles/artists.css";
 
 const Erica = () => {
   const images = [
-    "chain_dice.png",
-    "girl_reaper.png",
-    "snake_black-grey.png",
-    "snake_colour.png",
+    "erica1.jpg",
+    "erica2.jpg",
+    "erica3.jpg",
+    "erica4.jpg",
+    "erica5.jpg",
+    "erica6.jpg",
+    "erica7.jpg",
+    "erica8.jpg",
+    "erica9.jpg",
+    "erica10.jpg",
   ];
 
   return (
@@ -16,7 +22,11 @@ const Erica = () => {
       <div className="photo-grid">
         {images.map((image, index) => (
           <div key={index} className="photo-item">
-            <img src={`/images/erica/${image}`} alt={`${index}`} />
+            <img
+              src={`/images/erica/${image}`}
+              alt={`${index}`}
+              loading="lazy"
+            />
           </div>
         ))}
       </div>
