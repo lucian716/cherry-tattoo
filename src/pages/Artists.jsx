@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/artists.css"; 
+import "../styles/artists.css";
 
 const Artists = () => {
   const artists = [
@@ -32,8 +32,12 @@ const Artists = () => {
         {artists.map((artist) => (
           <div className="artist-item" key={artist.name}>
             <Link to={`/artists/${artist.name}`}>
-              <h3>{artist.name}</h3>
-              <img src={artist.image} alt={artist.name} loading="lazy" />
+              <div className="container">
+                <img src={artist.image} alt={artist.name} className="image" />
+                <div className="middle">
+                  <div className="text">{artist.name}</div>
+                </div>
+              </div>
             </Link>
           </div>
         ))}
