@@ -40,7 +40,7 @@ text-decoration: none;
 
 .artist-item img {
   width: 100%;
-  max-width: auto;
+  max-width: 90%;
   height: auto;
   transition: transform 400ms ease-out;
   box-shadow: 

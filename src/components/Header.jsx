@@ -14,7 +14,9 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo">
-        <img src={cherryGif} alt="Cherry Logo" className="logo-image" />
+        <Link to="/">
+          <img src={cherryGif} alt="Cherry Logo" className="logo-image" />
+        </Link>
       </div>
       <button
         className={`burger-button ${mobileMenuVisible ? "open" : ""}`}

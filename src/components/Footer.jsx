@@ -11,7 +11,7 @@ const Footer = () => {
         suite 214
         <br />
         Montreal, QC H2T 2A3
-        <br />
+        <br style={{ marginBottom: ".5rem" }} />
         cherrytattoomtl@gmail.com
       </p>
     </footer>
